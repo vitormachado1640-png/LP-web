@@ -11,6 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Gravitas+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
+    <link rel="icon" href="data:,">
 </head>
 
 <body>
@@ -73,11 +74,13 @@
 
         <section id="s4">
             <h1>Contato</h1>
-                <label for="name">Nome:</label>
+            <div class="formulario">
+                <label for="nome">Nome:</label>
                 <input type="text" id="nome" placeholder="Digite Seu nome">
                 <label for="assunto">Mensagem:</label><br>
                 <textarea id="assunto" placeholder="Digite sua mensagem"></textarea><br>
                 <button onclick="enviar()">Enviar</button>
+            </div>
         </section>
 
     </main>
