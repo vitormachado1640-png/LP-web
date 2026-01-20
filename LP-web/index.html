@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
     <link rel="stylesheet" href="style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gravitas+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" 
-rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gravitas+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <nav>
         <a href="#s1">Apresentação</a>
@@ -19,30 +22,85 @@ rel="stylesheet">
     </nav>
     <main>
         <section id="s1">
-            <h1>Apresentação</h1>
+            <div class="imgDiv">
+                <img class="imgStyle" src="./images/lp.jpg" alt="Leão">
+
+            </div>
+            <div class="textDiv">
+                <h2>José Vitor</h2>
+                <p>Testando minhas habilidades em desenvolvimento web,
+                    este portfólio apresenta meus projetos e competências
+                    na área. Sou um entusiasta da tecnologia e estou sempre em busca de novos desafios para aprimorar
+                    minhas habilidades. Aqui você encontrará uma seleção dos meus trabalhos mais recentes,
+                    que refletem minha dedicação e paixão pelo desenvolvimento web.
+                </p>
+            </div>
         </section>
 
         <section id="s2">
             <h1>Projetos</h1>
+            <div class="wrapCards">
+                <div class="cards">
+                    <h3>Projeto 1</h3>
+                    <p>Descrição do projeto 1.</p>
+                    <hr>
+                    <a href="https://github.com/vitormachado1640-png/Desenvolvimento-Web-front-correto.git"
+                        target="_blank">Ir para o projeto</a>
+                </div>
+                <div class="cards">
+                    <h3>Projeto 2</h3>
+                    <p>Descrição do projeto 2.</p>
+                    <hr>
+                    <a href="">Ir para o projeto</a>
+                </div>
+                <div class="cards">
+                    <h3>Projeto 3</h3>
+                    <p>Descrição do projeto 3.</p>
+                    <hr>
+                    <a href="">Ir para o projeto</a>
+                </div>
         </section>
 
         <section id="s3">
             <h1>Vídeo</h1>
+            <div class="videoStyle">
+                <iframe class="videoStyle" src="https://www.youtube.com/embed/oDXDYjksMds?si=Qqlwb4fDAwY0j_RL"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
         </section>
 
         <section id="s4">
             <h1>Contato</h1>
+                <label for="name">Nome:</label>
+                <input type="text" id="nome" placeholder="Digite Seu nome">
+                <label for="assunto">Mensagem:</label><br>
+                <textarea id="assunto" placeholder="Digite sua mensagem"></textarea><br>
+                <button onclick="enviar()">Enviar</button>
         </section>
 
     </main>
     <footer>
-        <img src="" alt="Linkedin">
-        <img src="" alt="Instagram">
-        <img src="" alt="GitHub">
-        <img src="" alt="YouTube">
+        <a href="https://www.linkedin.com/in/jos%C3%A9-vitor-beserra-machado-7253311a4/" target="_blank">
+            <img src="./images/linkedin.png" alt="Linkedin" />
+        </a>
+
+        <a href="https://www.instagram.com/vitor.vitor44/" target="_blank">
+            <img src="./images/instagram.png" alt="Instagram" />
+        </a>
+
+        <a href="https://github.com/vitormachado1640-png" target="_blank">
+            <img src="./images/github-sign.png" alt="Github" />
+        </a>
+
+        <a href="https://www.facebook.com/jose.vitor.1654/photos_by" target="_blank">
+            <img src="./images/facebook.png" alt="Facebook" />
+        </a>
     </footer>
 
     <script src="script.js"></script>
 
 </body>
+
 </html>
